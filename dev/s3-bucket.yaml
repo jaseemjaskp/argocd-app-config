@@ -1,0 +1,10 @@
+
+apiVersion: s3.aws.upbound.io/v1beta1
+kind: Bucket
+metadata:
+  generateName: argo-demo-zipstack-test
+  annotations:
+    argocd.argoproj.io/hook: Sync  
+spec:
+  forProvider:
+    region: ap-south-1
